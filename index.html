@@ -42,30 +42,33 @@
           <button>Request Demo</button>
         </nav>
       </div>
-    </header>
-    <div class="warning-message">
-      <div class="container">
-        <p>
-          We’ve compiled some COVID-19 resources to help you stay connected and
-          informed.
-        </p>
-        <button class="reverse-btn">Learn More</button>
+      <div class="warning-message">
+        <div class="dismiss">x</div>
+        <div class="container">
+          <p>
+            We’ve compiled some COVID-19 resources to help you stay connected
+            and informed.
+          </p>
+          <button class="reverse-btn">Learn More</button>
+        </div>
       </div>
-    </div>
+    </header>
     <div class="hero">
       <div class="container">
         <div class="hero-text">
-          <h3>Is your public relations</h3>
-          <h3>measureable?</h3>
+          <h3>Do you need to</h3>
+          <h3 id="dynamic-text"></h3>
           <p>
-            Muck Rack is the new standard in public relations software. Easily
-            search for journalists, monitor news, and build reports.
+            Use My Tech is the new standard in equipment rentals without the
+            hassle of a middleman. Easily search for cameras, lenses, fog
+            machines, and so much more.
           </p>
           <div class="button-group">
             <button class="reverse-btn">Get Started</button
             ><button>Request Demo</button>
           </div>
         </div>
+        <div></div>
       </div>
     </div>
     <div class="ft-companies">
@@ -184,53 +187,70 @@
     <hr />
     <div class="main-body">
       <div class="container">
-        <h2>Smarter PR with powerful, easy-to-use software</h2>
+        <h2>Smarter rentals with powerful, easy-to-use software</h2>
         <div class="row">
           <section class="text-section">
-            <h3>Find the right journalists to pitch</h3>
+            <h3>Find the right borrower or lender</h3>
             <p>
               Say hello to your one-stop, relationship-building platform and
-              goodbye to outdated media databases: Muck Rack's search engine
-              lets you discover and pitch relvant journalists in a much more
+              goodbye to outdated databases! Use My Tech's intuitive search
+              engine lets you lend or borrow to other users in a much more
               targeted way than legacy <span>media databases.</span> Building
-              and sharing media lists has never been easier, and since they're
+              and sharing tech lists has never been easier, and since they're
               automatically kept up-to-date you can finally stop spending time
               maintaining old media contact lists.
+            </p>
+          </section>
+          <section class="image">
+            <img src="/img/Letter.png" id="letter" alt="" />
+          </section>
+        </div>
+        <div class="row">
+          <section class="image">
+            <img src="/img/Magnifying Glass.png" alt="" />
+          </section>
+          <section class="text-section">
+            <h3>Monitor the news</h3>
+            <p>
+              Never miss a beat: Get alerts in your inbox whenever borrowers or
+              lenders and tweeting about tech on your watchlist or any relevant
+              keywords. You’ll instantly know who to connect with, what they're
+              looking for, and when.
             </p>
           </section>
         </div>
         <div class="row">
           <section class="text-section">
-            <h3>Find the right journalists to pitch</h3>
+            <h3>Report on any campaign</h3>
             <p>
-              Say hello to your one-stop, relationship-building platform and
-              goodbye to outdated media databases: Muck Rack's search engine
-              lets you discover and pitch relvant journalists in a much more
-              targeted way than legacy <span>media databases.</span> Building
-              and sharing media lists has never been easier, and since they're
-              automatically kept up-to-date you can finally stop spending time
-              maintaining old media contact lists.
+              Show your value: Use My Tech turns data from your watchlists into
+              professional, easy-to-digest reports. Export presentation-ready
+              PDF reports or the raw data in Excel, and quickly show off your
+              items’ impact.
             </p>
           </section>
-        </div>
-        <div class="row">
-          <section class="text-section">
-            <h3>Find the right journalists to pitch</h3>
-            <p>
-              Say hello to your one-stop, relationship-building platform and
-              goodbye to outdated media databases: Muck Rack's search engine
-              lets you discover and pitch relvant journalists in a much more
-              targeted way than legacy <span>media databases.</span> Building
-              and sharing media lists has never been easier, and since they're
-              automatically kept up-to-date you can finally stop spending time
-              maintaining old media contact lists.
-            </p>
+          <section class="image">
+            <img src="/img/Chart.png" alt="" />
           </section>
         </div>
         <button id="main-button">Learn More About Muck Rack</button>
       </div>
     </div>
     <div class="testimonials">
+      <div class="scroll-left">
+        <svg
+          id="next-left"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 489.6 489.6"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <path
+            class="ec34a27d-3f9e-44f4-8e6f-4c99482a5a9a"
+            d="M244.8,0C109.8,0,0,109.8,0,244.8S109.8,489.6,244.8,489.6,489.6,379.8,489.6,244.8,379.8,0,244.8,0Zm77.1955,263.4442-98.41,98.41a26.3575,26.3575,0,0,1-37.3967-37.1529l79.8957-79.8977L186.31,165.029a26.358,26.358,0,1,1,37.2758-37.2758l98.4127,98.4127a26.3561,26.3561,0,0,1-.0026,37.2783Z"
+          />
+        </svg>
+      </div>
       <div class="container">
         <div class="testimonial-text">
           <h3>Here's what our customers say about us</h3>
@@ -247,12 +267,100 @@
               databases I've used.
             </p>
             <hr />
-            <h4>Jacqui Wimberly</h4>
+            <h4>Zoe Trager</h4>
             <h5>Account Supervisor</h5>
           </div>
         </div>
+        <div class="testimonial-nav-dots">
+          <div class="active"></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="scroll-right">
+        <svg
+          id="next-right"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 489.6 489.6"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <path
+            class="ec34a27d-3f9e-44f4-8e6f-4c99482a5a9a"
+            d="M244.8,0C109.8,0,0,109.8,0,244.8S109.8,489.6,244.8,489.6,489.6,379.8,489.6,244.8,379.8,0,244.8,0Zm77.1955,263.4442-98.41,98.41a26.3575,26.3575,0,0,1-37.3967-37.1529l79.8957-79.8977L186.31,165.029a26.358,26.358,0,1,1,37.2758-37.2758l98.4127,98.4127a26.3561,26.3561,0,0,1-.0026,37.2783Z"
+          />
+        </svg>
       </div>
     </div>
-    <div><div class="container"></div></div>
+    <div class="pre-footer">
+      <div class="container">
+        <h3>Ready to get started?</h3>
+        <button>Request Demo</button>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h6>FOR PR PROS</h6>
+            <a href="">Overview</a>
+            <a href="">Media Database</a>
+            <a href="">Monitoring and Alerts</a>
+            <a href="">Pitching</a>
+            <a href="">Collaboration</a>
+            <a href="">Reporting and Measurement</a>
+          </div>
+          <div class="column">
+            <h6>FOR JOURNALISTS</h6>
+            <a href="">Overview</a>
+            <a href="">Create Portfolio</a>
+            <a href="">Muck Rack Daily</a>
+            <a href="">Topics</a>
+            <a href="">Media Outlets</a>
+            <a href="">Trending Stories</a>
+          </div>
+          <div class="column">
+            <h6>RESOURCES</h6>
+            <a href="">Case Studies</a>
+            <a href="">Webinars</a>
+            <a href="">Guides and eBooks</a>
+            <a href="">Research</a>
+            <a href="">Muck Rack Daily</a>
+            <a href="">Rankings</a>
+            <a href="">Blog</a>
+            <a href="">Trends</a>
+          </div>
+          <div class="column">
+            <h6>COMPANY</h6>
+            <a href="">About</a>
+            <a href="">Press</a>
+            <a href="">Careers</a>
+            <a href="">Bookmarklets</a>
+            <a href="">Refer a Friend</a>
+          </div>
+          <div class="column">
+            <h6>CONTACT US</h6>
+            <a href="">Feedback/Support</a>
+            <a href="">hello@muckrack.com</a>
+            <a href="">Twitter</a>
+            <a href="">Facebook</a>
+            <a href="">Do not sell</a>
+            <a href="">(413) 500-1883</a>
+            <a href="">(855) MUCK-RACK</a>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <p>
+              <a href="">Privacy Policy</a> • <a href="">Terms & Conditions</a>
+            </p>
+          </div>
+          <div><p>Copyright 2020 Muck Rack • Made in NYC</p></div>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
   </body>
 </html>
