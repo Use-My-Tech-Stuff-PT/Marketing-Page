@@ -14,7 +14,7 @@ let listOfNeeds = [
 
 dismissAnnouncement.addEventListener("click", () => {
   covidAnnouncement.style.display = "none";
-  hero.style.marginTop = "4rem";
+  hero.style.marginTop = "3.9rem";
   if (window.scrollY === 0) {
     window.scrollTo(0, 0);
   } else {
