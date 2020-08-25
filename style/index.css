@@ -81,6 +81,10 @@ button {
   border: none;
 }
 
+button:hover {
+  background-color: var(--main-highlight-color-hover);
+}
+
 button.reverse-btn {
   background-color: #00000000;
   border: 1.5px solid var(--text-color);
@@ -88,8 +92,8 @@ button.reverse-btn {
   color: var(--text-color);
 }
 
-button:hover {
-  background-color: var(--main-highlight-color-hover);
+button.reverse-btn:hover {
+  background-color: var(--secondary-highlight-color);
 }
 
 .container {
@@ -123,15 +127,19 @@ header > .container > a {
   height: auto;
 }
 
-nav {
+.main-nav {
   align-items: baseline;
   display: flex;
   justify-content: space-between;
   width: 32rem;
 }
 
-nav > a:hover {
+.main-nav > a:hover {
   color: var(--main-midtone-color);
+}
+
+nav.burger-nav {
+  display: none;
 }
 
 .active-page {
@@ -222,6 +230,18 @@ div.button-group > button:first-of-type {
 
 .ft-companies {
   padding: 20px 0px;
+}
+
+.ft-companies > .container > h5 > br {
+  display: none;
+}
+
+.main-body > .container > h2 {
+  text-align: center;
+}
+
+.main-body > .container > h2 > br {
+  display: none;
 }
 
 .container > h5 {
@@ -516,6 +536,12 @@ footer .row:nth-child(2) {
   }
 }
 
+@media only screen and (max-width: 1590px) {
+  .main-body > .container > h2 > br {
+    display: inline-block;
+  }
+}
+
 @media only screen and (max-width: 1480px) {
   .hero {
     background-position: 44vw -20vw;
@@ -531,5 +557,175 @@ footer .row:nth-child(2) {
 @media only screen and (max-width: 1280px) {
   .hero {
     background-position: 44vw -10vw;
+  }
+}
+
+@media only screen and (max-width: 1215px) {
+  .main-nav {
+    display: none;
+  }
+
+  nav.burger-nav {
+    display: inline-block;
+  }
+
+  nav.burger-nav > svg {
+    fill: var(--brightest-color);
+    width: 2rem;
+    height: auto;
+  }
+
+  nav.burger-nav > svg:hover {
+    cursor: pointer;
+  }
+
+  .hero {
+    background-image: none;
+    background-size: 100%;
+    background-position: 0 0;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text > h3 {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .hero-text > h3 > br {
+    display: none;
+  }
+
+  .hero-text > p {
+    text-align: center;
+  }
+
+  .hero-text > .button-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-body > .container > h2 {
+    font-size: 5vw;
+    margin-bottom: 1vw;
+  }
+
+  .main-body > .container > .row {
+    flex-direction: column-reverse;
+    margin-top: 3vw;
+  }
+
+  .main-body > .container > .row > .text-section {
+    width: 100%;
+    margin-top: 3vw;
+  }
+
+  .main-body > .container > .row > .text-section > h3 {
+    text-align: center;
+  }
+
+  .image > img {
+    width: 9.25rem;
+  }
+
+  #letter {
+    width: 6rem;
+  }
+
+  #magnifying-glass {
+    order: 1;
+  }
+
+  .container > .row > .column > a {
+    line-height: 1.65rem;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .pre-footer > .container > h3 {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .company-logos > svg:last-of-type {
+    display: none;
+  }
+
+  #main-button {
+    display: none;
+  }
+
+  .testimonials {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .warning-message > .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .warning-message > .container > .reverse-btn {
+  }
+
+  footer {
+    padding: 0.75rem 0;
+  }
+
+  footer > .container > .row {
+    padding-top: 0;
+  }
+
+  footer > .container > .row > .column {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 845px) {
+  .ft-companies,
+  body > hr {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .warning-message {
+    padding-bottom: 0.5rem;
+  }
+
+  .warning-message > div.container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+  }
+
+  .warning-message > div.container > p {
+    text-align: center;
+    margin: 0;
+  }
+
+  .hero-text > h3,
+  .button-group > .reverse-btn,
+  #privacy-policy-and-terms,
+  .pre-footer > .container > h3 {
+    display: none;
+  }
+
+  .hero-text > p {
+    margin: 0 0 1.5rem 0;
+    line-height: 1rem;
+  }
+
+  footer > .container > .row:last-of-type {
+    display: flex;
+    justify-content: center;
   }
 }

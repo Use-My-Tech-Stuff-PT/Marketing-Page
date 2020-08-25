@@ -34,7 +34,7 @@
             src="img/Use My Tech Horizontal Logo_Teal Icon.png"
             alt=""
         /></a>
-        <nav>
+        <nav class="main-nav">
           <a href="" class="active-page">Home</a>
           <a href="">Meet The Team</a>
           <a href="">Contact</a>
@@ -42,6 +42,26 @@
             <button class="reverse-btn">Log In</button>
             <button>Request Demo</button>
           </div>
+        </nav>
+        <nav class="burger-nav">
+          <svg
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 489.6 489.6"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <g>
+              <path
+                d="M418.3,149.3h-347c-9.7,0-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5h347c9.7,0,17.5,7.8,17.5,17.5S428,149.3,418.3,149.3z"
+              />
+              <path
+                d="M418.3,262.3h-347c-9.7,0-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5h347c9.7,0,17.5,7.8,17.5,17.5S428,262.3,418.3,262.3z"
+              />
+              <path
+                d="M418.3,375.3h-347c-9.7,0-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5h347c9.7,0,17.5,7.8,17.5,17.5S428,375.3,418.3,375.3z"
+              />
+            </g>
+          </svg>
         </nav>
       </div>
       <div class="warning-message">
@@ -76,7 +96,10 @@
     </div>
     <div class="ft-companies">
       <div class="container">
-        <h5>TRUSTED BY FORWARD-THINKING COMPANIES AROUND THE WORLD</h5>
+        <h5>
+          TRUSTED BY FORWARD-THINKING <br />
+          COMPANIES AROUND THE WORLD
+        </h5>
         <div class="company-logos">
           <svg
             id="facebook-logo"
@@ -190,7 +213,10 @@
     <hr />
     <div class="main-body">
       <div class="container">
-        <h2>Smarter rentals with powerful, easy-to-use software</h2>
+        <h2>
+          Smarter rentals with powerful, <br />
+          easy-to-use software
+        </h2>
         <div class="row">
           <section class="text-section">
             <h3>Find the right borrower or lender</h3>
@@ -198,8 +224,8 @@
               Say hello to your one-stop, relationship-building platform and
               goodbye to outdated databases! Use My Tech's intuitive search
               engine lets you lend or borrow to other users in a much more
-              targeted way than legacy <span>media databases.</span> Building
-              and sharing tech lists has never been easier, and since they're
+              targeted way than legacy <span>tech databases.</span> Building and
+              sharing tech lists has never been easier, and since they're
               automatically kept up-to-date you can finally stop spending time
               maintaining old media contact lists.
             </p>
@@ -209,7 +235,7 @@
           </section>
         </div>
         <div class="row">
-          <section class="image">
+          <section class="image" id="magnifying-glass">
             <img src="/img/Magnifying Glass.png" alt="" />
           </section>
           <section class="text-section">
@@ -236,7 +262,7 @@
             <img src="/img/Chart.png" alt="" />
           </section>
         </div>
-        <button id="main-button">Learn More About Muck Rack</button>
+        <button id="main-button">Learn More</button>
       </div>
     </div>
     <div class="testimonials">
@@ -264,9 +290,9 @@
           <div class="card-text">
             <img src="" alt="" />
             <p>
-              Use My Tech has a user-friendly interface and media database.
-              Where other tools are clunky, Use My Tech is intuitive and fast. I
-              love that the platform is integrated with Twitter, and is more
+              Use My Tech has a user-friendly interface and tech database. Where
+              other tools are clunky, Use My Tech is intuitive and fast. I love
+              that the platform is integrated with Twitter, and is more
               up-to-date than other databases I've used.
             </p>
             <hr />
@@ -307,19 +333,19 @@
       <div class="container">
         <div class="row">
           <div class="column">
-            <h6>FOR PR PROS</h6>
+            <h6>FOR BORROWERS</h6>
             <a href="">Overview</a>
-            <a href="">Media Database</a>
+            <a href="">Tech Database</a>
             <a href="">Monitoring and Alerts</a>
             <a href="">Pitching</a>
             <a href="">Collaboration</a>
             <a href="">Reporting and Measurement</a>
           </div>
           <div class="column">
-            <h6>FOR JOURNALISTS</h6>
+            <h6>FOR RENTERS</h6>
             <a href="">Overview</a>
             <a href="">Create Portfolio</a>
-            <a href="">Muck Rack Daily</a>
+            <a href="">Daily Tech Trends</a>
             <a href="">Topics</a>
             <a href="">Media Outlets</a>
             <a href="">Trending Stories</a>
@@ -330,7 +356,7 @@
             <a href="">Webinars</a>
             <a href="">Guides and eBooks</a>
             <a href="">Research</a>
-            <a href="">Muck Rack Daily</a>
+            <a href="">Daily Tech Talk</a>
             <a href="">Rankings</a>
             <a href="">Blog</a>
             <a href="">Trends</a>
@@ -346,21 +372,20 @@
           <div class="column">
             <h6>CONTACT US</h6>
             <a href="">Feedback/Support</a>
-            <a href="">hello@muckrack.com</a>
+            <a href="mailto:info@usemytech.com">info@usemytech.com</a>
             <a href="">Twitter</a>
             <a href="">Facebook</a>
             <a href="">Do not sell</a>
-            <a href="">(413) 500-1883</a>
-            <a href="">(855) MUCK-RACK</a>
+            <a href="tel:800-873-6983">(800) USE-MY-TECH</a>
           </div>
         </div>
         <div class="row">
-          <div>
+          <div id="privacy-policy-and-terms">
             <p>
               <a href="">Privacy Policy</a> • <a href="">Terms & Conditions</a>
             </p>
           </div>
-          <div><p>Copyright 2020 Muck Rack • Made in NYC</p></div>
+          <div><p>Copyright © 2020 Use My Tech • Made in USA</p></div>
         </div>
       </div>
     </footer>
