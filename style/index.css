@@ -746,6 +746,7 @@ footer .row:nth-child(2) {
   grid-gap: 1rem;
   grid-template-columns: repeat(5, 1fr);
   margin-top: 2rem;
+  align-items: stretch;
 }
 
 .card {
@@ -764,7 +765,8 @@ footer .row:nth-child(2) {
 }
 
 #juan-card > .team-text-section > h3 {
-  font-size: 0.95rem;
+  font-size: 1.1vw;
+  line-height: 1.38vw;
 }
 
 #Sara-pic {
@@ -790,20 +792,22 @@ footer .row:nth-child(2) {
   color: var(--faded-main-midtone-color);
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1100px) {
   .main-body > div.team-container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .team-text-section > h3 {
+    font-size: 3vw;
   }
 }
 
-@media only screen and (max-width: 740px) {
-  .main-body > div.team-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 830px) {
   .main-body > div.team-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .team-text-section > h3 {
+    font-size: 6vw;
   }
 }
