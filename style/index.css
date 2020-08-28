@@ -124,6 +124,11 @@ header > .container > a {
   justify-content: center;
 }
 
+header > .container > .main-nav > p {
+  color: var(--faded-main-midtone-color);
+  cursor: not-allowed;
+}
+
 #logo {
   width: 12rem;
   height: auto;
