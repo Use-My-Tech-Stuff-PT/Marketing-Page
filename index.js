@@ -4,12 +4,12 @@ let hero = document.getElementsByClassName("hero")[0];
 let dynamicText = document.getElementById("dynamic-text");
 
 let listOfNeeds = [
-  "rent camera equipment?",
-  "rent out your camera equipment?",
-  "rent a fog machine?",
-  "rent out your fog machine?",
-  "rent lighting equipment?",
-  "rent out your lighting equipment?",
+  "camera equipment?",
+  "OUT your camera equipment?",
+  "a fog machine?",
+  "OUT your fog machine?",
+  "lighting equipment?",
+  "OUT your lighting equipment?",
 ];
 
 dismissAnnouncement.addEventListener("click", () => {
@@ -23,6 +23,49 @@ dismissAnnouncement.addEventListener("click", () => {
 
 console.log(dynamicText);
 
-for (let i = 0; i < listOfNeeds.length; i++) {
-  dynamicText.innerText = listOfNeeds[i];
+let i = 0;
+let j = 0;
+let currentPhrase = [];
+isDeleting = false;
+isEnd = false;
+
+function loop() {
+  isEnd = false;
+  dynamicText.innerHTML = currentPhrase.join("");
+
+  if (i < listOfNeeds.length) {
+    if (!isDeleting && j <= listOfNeeds[i].length) {
+      currentPhrase.push(listOfNeeds[i][j]);
+      j++;
+      dynamicText.innerHTML = currentPhrase.join("");
+    }
+
+    if (isDeleting && j <= listOfNeeds[i].length) {
+      currentPhrase.pop(listOfNeeds[i][j]);
+      j--;
+      dynamicText.innerHTML = currentPhrase.join("");
+    }
+
+    if (j == listOfNeeds[i].length) {
+      isDeleting = true;
+      isEnd = true;
+    }
+
+    if (isDeleting && j === 0) {
+      currentPhrase = [];
+      isDeleting = false;
+      i++;
+      if (i === listOfNeeds.length) {
+        i = 0;
+      }
+    }
+  }
+
+  const speedUp = Math.random() * (60 - 30) + 30;
+  const normalSpeed = Math.random() * (200 - 100) + 100;
+  const time = isEnd ? 1500 : isDeleting ? speedUp : normalSpeed;
+
+  setTimeout(loop, time);
 }
+
+loop();
